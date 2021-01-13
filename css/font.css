@@ -1,0 +1,13 @@
+
+@font-face{
+    font-family: myfont;
+    src: url(Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: fontbold;
+    src: url(Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family: mythinfont;
+    src: url(Montserrat/Montserrat-Thin.ttf);
+}

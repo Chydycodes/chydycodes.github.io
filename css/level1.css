@@ -1,0 +1,162 @@
+html, body{
+    width: 100%;
+    padding: 0px;
+    color: white;
+
+    margin: 0px;
+    font-family: myfont;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 0px 0px 10px 0px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+    background-color: rgb(41, 39, 39);
+    padding: 18px;
+    text-align: center;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 18px;
+   font-size: 20px;
+}
+.active{
+    background-color: rgb(22, 17, 17);
+}
+nav > a:hover:not(.active){
+    background: black;
+}
+.about{
+    background-color: rgb(3, 3, 20);
+    padding: 50px 0px;
+}
+.about > p{
+    text-align: left;
+    line-height: 30px;
+    margin: 0px 80px;
+}
+.project{
+    background-color: black;
+    padding: 50px 20px 50px 0px;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    margin: 0px 80px;
+}
+.project-container > .grid-holder{
+    /* background-color: green; */
+    text-align: center;
+    padding: 10px 20px;
+}
+.img-holder > img{
+    width: 100%;
+    cursor: pointer;
+}
+.project-container > .grid-holder > a{
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact{
+    background-color: rgb(3, 3, 20);
+    padding: 50px 0px;
+}
+.contact > form{
+    text-align: center;
+    /* margin: 100px 0px 0px 0px; */
+}
+input{
+    width: 250px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-family: myfont;
+}
+.submit{
+    cursor: pointer;
+    width: 270px;
+    background: black;
+    color: white;
+    font-family: fontbold;
+}
+.submit:hover{
+    background: darkgrey;
+    color: black;
+}
+.connect{
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+    background-color: black;
+}
+.links{
+    padding: 0px;
+    margin: 15px 0px ;
+    /* background-color: red; */
+}
+.icon{
+    text-decoration: none;
+    font-size: 25px;
+}
+.icon i{
+    color: white;
+    padding: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.icon i:hover{
+ background: darkgrey;
+}
+.footer{
+    background-color: rgb(41, 39, 39);
+    /* height: 30px; */
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+@media(max-width: 960px){
+    .project-container{
+        grid-template-columns: 1fr 1fr;
+        margin: 0px 60px;
+    }
+}
+@media(max-width: 680px){
+    .project-container{
+        grid-template-columns: 1fr;
+        margin: 0px 40px;
+    }
+}
+@media(max-width: 468px){
+    .about > p{
+        margin: 0px 20px;
+    }
+    .project-container{
+        margin: 0px 20px;
+    }
+}
+@media(max-width: 399px){
+    nav{
+        padding: 18px;
+    }
+    nav > a{
+        padding: 10px;
+       font-size: 15px;
+    }
+    h1,h2,h3,h4,h5,h6{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
